@@ -2,65 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43cc5c5e-e65a-4a78-bdf3-aa20ef8cb16c" name="默认的" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/idanmu.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/env.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/jest/cssTransform.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/jest/fileTransform.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/paths.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/polyfills.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/webpack.config.dev.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/webpack.config.prod.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/manifest.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/build.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/start.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/.idea/sever.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/.idea/watcherTasks.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/api/article.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/api/user.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/app.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/common/1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/common/utils.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/controllers/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/controllers/user.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/models/user.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/routers/home.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/routers/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sever/sever.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/app.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/base/top-tip/top-tip.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/base/top-tip/top-tip.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/common/style/index.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/common/style/reset.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/component/authroute/authroute.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/component/footer/footer.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/component/footer/footer.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/component/header/header.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/component/header/header.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/component/login/login.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/component/login/login.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/component/register/register.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/component/user-info/user-info.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/component/user-info/user-info.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/store/user-state.js" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -108,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="44">
-              <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -148,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="283" column="4" lean-forward="true" selection-start-line="283" selection-start-column="4" selection-end-line="283" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -357,12 +300,12 @@
       <workItem from="1518324573321" duration="40584000" />
       <workItem from="1518417121657" duration="9443000" />
       <workItem from="1518426596933" duration="1085000" />
-      <workItem from="1518428558092" duration="354000" />
+      <workItem from="1518428558092" duration="806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65577000" />
+    <option name="totallyTimeSpent" value="66029000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -667,7 +610,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="21" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -677,7 +620,7 @@
         <state relative-caret-position="374">
           <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -750,14 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -769,7 +704,15 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
-          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="283" column="4" lean-forward="true" selection-start-line="283" selection-start-column="4" selection-end-line="283" selection-end-column="4" />
           <folding />
         </state>
       </provider>
