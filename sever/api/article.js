@@ -3,14 +3,10 @@
 */
 
 const Router = require('koa-router')
+const article = require('../controllers/article')
 
 const router = new Router()
 
-router.get('/article', async (ctx) => {
-    const url = ctx.url
-    ctx.body = {
-        url,
-    }
-})
+router.get('/list', article.articleList)
 
 module.exports = router

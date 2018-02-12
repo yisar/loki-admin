@@ -1,0 +1,41 @@
+.write-article {
+    width: 800px;
+    margin: 100px auto;
+}
+
+.write-article h1 {
+    color: #467B96;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.write-article input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+.write-article button{
+    background: #467B96;
+    border-radius: 2px;
+    padding: 8px 30px;
+    color: #fff;
+    margin: 20px 0;
+    border: 0px;
+    cursor: pointer;
+    float: right;
+}
+.write-article select{
+    padding: 5px 17px;
+    border: 1px solid #ddd;
+    color: #666;
+    margin: 20px 20px 0 0;
+    position: relative;
+    top: 3px;
+}
+.write-article span{
+    color: #666;
+    font-size: 12px;
+}

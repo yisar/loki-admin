@@ -1,6 +1,7 @@
 import React from 'react'
 import {observer, inject} from 'mobx-react'
 import './user-info.css'
+import {Link} from 'react-router-dom'
 
 @inject('userState') @observer
 
@@ -16,7 +17,9 @@ class UserInfo extends React.Component {
         <div className="name">欢迎！{this.props.userState.user.name}sama~</div>
         <div className="quick-start">
           快速开始：
-          <span>写文章</span>
+          <span>
+            <Link to="/write-article">写文章</Link>
+          </span>
           <span>查看文章</span>
           <span>设置</span>
         </div>

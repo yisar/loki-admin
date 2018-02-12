@@ -1,6 +1,8 @@
 <<<<<<< HEAD
 # Created by .ignore support plugin (hsz.mobi)
 node_modules/
+.idea/
+/.idea/workspace.xml/
 .idea/gi
 =======
 # Logs
@@ -63,3 +65,6 @@ typings/
 
 >>>>>>> a3b924259f62329924a0e4d51c656749640bc470
 /sever/.idea/
+/sever/sever.js
+
+

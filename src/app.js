@@ -8,6 +8,8 @@ import Login from "./component/login/login"
 import AuthRoute from './component/authroute/authroute'
 import Header from "./component/header/header"
 import Footer from './component/footer/footer'
+import UserAdmin from "./component/user-admin/user-admin"
+import WriteArticle from "./component/write-article/wirte-article"
 
 class App extends React.Component {
   render() {
@@ -17,7 +19,9 @@ class App extends React.Component {
         <Header/>
         <Route path='/login' component={Login}/>
         <Route path='/register' component={Register}/>
-        <Route path='/info' exact component={UserInfo}/>
+        <Route path='/' exact component={UserInfo}/>
+        <Route path='/user' component={UserAdmin}></Route>
+        <Route path='/write-article' component={WriteArticle}></Route>
         <Footer/>
       </div>
     )

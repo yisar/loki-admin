@@ -2,7 +2,7 @@ import axios from 'axios'
 
 import {observable, action} from 'mobx'
 
-class LoginState {
+class UserState {
   @observable user = {
     name: '',
     pwd: '',
@@ -45,8 +45,9 @@ class LoginState {
       (res) => {
         if (res.status === 200 & res.data.code === 0) {
           this.msg = res.data.msg
+          this.user.qq = res.data.result.qq
           setTimeout(() => {
-            this.redirectTo = '/info'
+            this.redirectTo = '/'
           }, 3000)
         }
       }
@@ -59,8 +60,8 @@ class LoginState {
 
 }
 
-const loginState = new LoginState()
+const userState = new UserState()
 
 console.log('mobx is ready!!!!!')
 
-export default loginState
+export default userState
