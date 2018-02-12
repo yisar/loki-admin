@@ -1,0 +1,9 @@
+.toptip {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    background: #467B96;
+    color: #fff;
+    top: 0;
+    text-align: center;
+}

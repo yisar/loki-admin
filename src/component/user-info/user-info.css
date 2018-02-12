@@ -1,0 +1,29 @@
+.user-info {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.avatar {
+    text-align: center;
+    padding: 30px;
+
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.quick-start {
+    padding: 100px;
+    color: #999;
+}
+
+.quick-start span {
+    color: #467B96;
+    padding: 10px;
+}

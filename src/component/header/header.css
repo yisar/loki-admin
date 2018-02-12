@@ -1,0 +1,16 @@
+header{
+    background:#467B96;
+    padding: 10px;
+    width: 100%;
+}
+
+header li{
+    display: inline-block;
+    color: #fff;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+header li.active{
+    background: #204f69;
+}
