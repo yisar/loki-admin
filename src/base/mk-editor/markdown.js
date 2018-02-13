@@ -4,19 +4,25 @@ import './simpleMDE.css'
 import './markdown.css'
 
 class Markdown extends React.Component {
+
   componentDidMount() {
-    new Mde({
+    const mde = new Mde({
       element: document.getElementById("marked"),
       status: false,
-      spellChecker: false,
-      showIcons:[ ]
+      spellChecker: false
+    })
+
+    // 监听变化
+
+    mde.codemirror.on('change', () => {
+      this.props.handleMde(mde.value())
     })
   }
 
   render() {
     return (
       <div className="simpleMDE">
-        <textarea name="mark" id="marked" cols="30" rows="10"></textarea>
+        <textarea id="marked"></textarea>
       </div>
     )
   }

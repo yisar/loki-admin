@@ -62,6 +62,4 @@ class UserState {
 
 const userState = new UserState()
 
-console.log('mobx is ready!!!!!')
-
 export default userState
