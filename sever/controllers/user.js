@@ -59,11 +59,6 @@ module.exports = {
       }
     }
     const result = await User.findOne({name: data.name}, _ignore)
-    ctx.body = {
-      code: 0,
-      msg: '登录成功，马上跳转！',
-      result
-    }
     const id = result._id
 
     // 设置cookie
@@ -71,8 +66,14 @@ module.exports = {
     ctx.cookies.set(
       'id', id
     )
+    ctx.body = {
+      code: 0,
+      msg: '登录成功，马上跳转！',
+      result
+    }
   }
 }
+
 
 
 

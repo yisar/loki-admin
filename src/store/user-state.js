@@ -7,7 +7,8 @@ class UserState {
     name: '',
     pwd: '',
     repeatPwd: '',
-    qq: ''
+    qq: '',
+    _id:''
   }
   @observable msg = ''
   @observable redirectTo = ''
@@ -23,7 +24,7 @@ class UserState {
       return this.msg = '两次密码不一致！'
     }
 
-    axios.post('/api/user/register', user).then(
+    axios.post('/user/register', user).then(
       (res) => {
         if (res.status === 200 & res.data.code === 0) {
           this.msg = res.data.msg
@@ -41,7 +42,7 @@ class UserState {
     if (!this.user.name || !this.user.pwd) {
       return this.msg = '都是必填的！'
     }
-    axios.post('/api/user/login', user).then(
+    axios.post('/user/login', user).then(
       (res) => {
         if (res.status === 200 & res.data.code === 0) {
           this.msg = res.data.msg

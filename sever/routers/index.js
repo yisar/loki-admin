@@ -10,7 +10,7 @@ const user = require('../api/user')
 
 // 注册子路由
 routers.use('/', home.routes())
-routers.use('/api/article', article.routes())
-routers.use('/api/user', user.routes())
+routers.use('/article', article.routes())
+routers.use('/user', user.routes())
 
 module.exports = routers

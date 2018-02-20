@@ -11,7 +11,8 @@ class AuthRoute extends React.Component {
     super(props)
     this.state = {
       name: '',
-      qq: ''
+      qq: '',
+      _id:''
     }
   }
 
@@ -24,12 +25,13 @@ class AuthRoute extends React.Component {
       return
     }
     // 是否登录
-    axios.get('/api/user/info').then(res => {
+    axios.get('/user/info').then(res => {
       if (res.status === 200) {
         if (res.data.code === 0) {
           this.setState({
             name: res.data.result.name,
-            qq: res.data.result.qq
+            qq: res.data.result.qq,
+            _id:res.data.result._id
           })
 
           this.props.userState.getInfo(this.state)

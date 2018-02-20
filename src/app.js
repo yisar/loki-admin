@@ -10,6 +10,7 @@ import Header from "./component/header/header"
 import Footer from './component/footer/footer'
 import UserAdmin from "./component/user-admin/user-admin"
 import WriteArticle from "./component/write-article/wirte-article"
+import ArticleList from './component/article-list/article-list'
 
 class App extends React.Component {
   render() {
@@ -20,8 +21,9 @@ class App extends React.Component {
         <Route path='/login' component={Login}/>
         <Route path='/register' component={Register}/>
         <Route path='/' exact component={UserInfo}/>
-        <Route path='/user' component={UserAdmin}></Route>
-        <Route path='/write-article' component={WriteArticle}></Route>
+        <Route path='/user' component={UserAdmin}/>
+        <Route path='/write-article' component={WriteArticle}/>
+        <Route path='/article/:author' component={ArticleList}/>
         <Footer/>
       </div>
     )

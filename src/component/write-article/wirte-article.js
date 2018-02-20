@@ -12,8 +12,8 @@ class WriteArticle extends React.Component {
     this.state = {
       title: '',
       content: '',
-      sort: '',
-      status: ''
+      sort: 'anime',
+      status: 'wait'
     }
   }
 
@@ -45,7 +45,7 @@ class WriteArticle extends React.Component {
           <h1>撰写文章</h1>
           <input type="text" placeholder="请输入标题" onChange={e => this.handleChange('title', e.target.value)}/>
           <Markdown handleMde={this.changeMde.bind(this)}></Markdown>
-          <span>选择分类：<select value={this.state.sort} onChange={e => this.handleChange('sort', e.target.value)}>
+          <span><select onChange={e => this.handleChange('sort', e.target.value)} value="分类">
           <option value="anime">动画</option>
           <option value="comic">漫画</option>
           <option value="imgpack">图包</option>
@@ -53,7 +53,7 @@ class WriteArticle extends React.Component {
           <option value="game">游戏</option>
           <option value="other">其他</option>
         </select></span>
-          <span>选择状态：<select onChange={e => this.handleChange('status', e.target.value)}>
+          <span><select onChange={e => this.handleChange('status', e.target.value)} value="状态">
           <option value="wait">待审核</option>
           <option value="draft">草稿</option>
           <option value="public">发布</option>

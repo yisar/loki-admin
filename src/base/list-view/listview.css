@@ -1,0 +1,29 @@
+.article-list {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+.article-list h1 {
+    color: #467B96;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.listview li {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px #ddd dashed;
+}
+
+.listview ul li:last-child {
+    border: 0
+}
+
+.listview li .title {
+    flex: 4;
+    color: #467B96;
+}
+
+.listview li .sort, .listview li .status {
+    flex: 1;
+}

@@ -9,6 +9,7 @@ class UserInfo extends React.Component {
 
   render() {
     const qq = `http://q2.qlogo.cn/headimg_dl?dst_uin=` + this.props.userState.user.qq + `&spec=100`
+    const router =`/article/`+this.props.userState.user._id
     return (
       <div className="user-info">
         <div className="avatar">
@@ -20,7 +21,7 @@ class UserInfo extends React.Component {
           <span>
             <Link to="/write-article">写文章</Link>
           </span>
-          <span>查看文章</span>
+          <span><Link to={router}>查看文章</Link></span>
           <span>设置</span>
         </div>
       </div>
