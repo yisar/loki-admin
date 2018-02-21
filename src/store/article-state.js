@@ -24,6 +24,28 @@ class ArticleState {
       }
     )
   }
+
+  @action updateArticle(article) {
+    this.article = article
+    axios.post('/article/update', article).then(
+      (res) => {
+        if (res.data.code === 0 & res.status === 200) {
+          this.msg = res.data.msg
+        }
+      }
+    )
+  }
+
+  @action deleteOneArticle(id) {
+    axios.delete('/article/delete', {
+        params: {
+          id: id
+        }
+      }
+    ).then((res) => {
+      console.log(res.data)
+    })
+  }
 }
 
 const articleState = new ArticleState()

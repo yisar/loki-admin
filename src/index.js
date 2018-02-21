@@ -5,11 +5,13 @@ import {Provider} from 'mobx-react'
 import userState from './store/user-state'
 import articleState from './store/article-state'
 
+
 import App from './app'
 
 
 import './common/style/reset.css'
 import './common/style/index.css'
+import './common/style/iconfont.css'
 
 
 ReactDom.render((

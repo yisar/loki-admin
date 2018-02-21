@@ -3,17 +3,21 @@ import Markdown from '../../base/mk-editor/markdown'
 import './write-article.css'
 import {observer, inject} from 'mobx-react'
 import TopTip from '../../base/top-tip/top-tip'
+import axios from "axios"
 
 @inject('articleState') @observer
 
 class WriteArticle extends React.Component {
   constructor(props) {
+
     super(props)
+
     this.state = {
+      _id: '',
       title: '',
       content: '',
-      sort: 'anime',
-      status: 'wait'
+      sort: '',
+      status: ''
     }
   }
 
@@ -21,20 +25,48 @@ class WriteArticle extends React.Component {
     this.setState({
       [key]: val
     })
-
-
   }
 
   changeMde(content) {
     this.setState({
       content: content
     })
-
   }
 
   handleClick() {
-    this.props.articleState.writeArticle(this.state)
-    console.log(this.props.articleState)
+    if (this.props.location.pathname === '/write-article') {
+      this.props.articleState.writeArticle(this.state)
+      console.log(this.props.articleState)
+    } else {
+      this.props.articleState.updateArticle(this.state)
+      console.log(this.props.articleState)
+    }
+  }
+
+  componentDidMount() {
+    if (this.props.location.pathname !== '/write-article') {
+      axios.get('/article/one', {
+        params: {
+          id: this.props.match.params.editor
+        }
+      }).then((res) => {
+        if (res.status === 200 && res.data.code === 0) {
+          this.setState(res.data.result)
+        }
+      })
+    }
+
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+
+    // if (this.state.content !== nextState.content) {
+    //   return true
+    // }
+    if (this.state.title !== nextState.title || this.state.sort !== nextState.sort || this.state.status !== nextState.status) {
+      return true
+    }
+    return false
   }
 
   render() {
@@ -43,9 +75,13 @@ class WriteArticle extends React.Component {
         <div className="write-article">
 
           <h1>撰写文章</h1>
-          <input type="text" placeholder="请输入标题" onChange={e => this.handleChange('title', e.target.value)}/>
-          <Markdown handleMde={this.changeMde.bind(this)}></Markdown>
-          <span><select onChange={e => this.handleChange('sort', e.target.value)} value="分类">
+          <input type="text" placeholder="请输入标题"
+                 value={this.state.title}
+                 onChange={e => this.handleChange('title', e.target.value)}/>
+          <Markdown handleMde={this.changeMde.bind(this)}
+                    value={this.state.content}></Markdown>
+          <span><select onChange={e => this.handleChange('sort', e.target.value)} defaultValue=''
+                        value={this.state.sort}>
           <option value="anime">动画</option>
           <option value="comic">漫画</option>
           <option value="imgpack">图包</option>
@@ -53,7 +89,8 @@ class WriteArticle extends React.Component {
           <option value="game">游戏</option>
           <option value="other">其他</option>
         </select></span>
-          <span><select onChange={e => this.handleChange('status', e.target.value)} value="状态">
+          <span><select onChange={e => this.handleChange('status', e.target.value)} defaultValue=''
+                        value={this.state.status}>
           <option value="wait">待审核</option>
           <option value="draft">草稿</option>
           <option value="public">发布</option>

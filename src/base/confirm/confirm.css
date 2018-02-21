@@ -1,0 +1,27 @@
+.confirm {
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+
+}
+.confirm .text{
+    text-align: center;
+    padding: 30px 0;
+}
+.confirm .option{
+    display: flex;
+}
+.confirm .option li{
+    display: block;
+    flex: 1;
+    text-align:center;
+    cursor: pointer;
+}
+
+.confirm .option li:last-child{
+    background: #467B96;
+    color: #fff;
+}

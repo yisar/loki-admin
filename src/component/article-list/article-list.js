@@ -11,11 +11,10 @@ class ArticleList extends React.Component{
   }
 
   render(){
-    console.log(this.props)
     return(
       <div className="article-list">
         <h1>我的文章</h1>
-        <ListView list={this.state.article}/>
+        <ListView list={this.state.article} />
       </div>
     )
   }
