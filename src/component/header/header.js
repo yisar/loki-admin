@@ -32,7 +32,7 @@ class Header extends React.Component {
           <Link to='/write-article'><li>撰写</li></Link>
           <li>管理
           <ul>
-            <Link to='/article'><li>管理文章</li></Link>
+            <Link to='/articles'><li>管理文章</li></Link>
             <li>管理用户</li>
           </ul>
           </li>

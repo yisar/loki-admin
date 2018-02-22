@@ -21,7 +21,7 @@ class ArticleList extends React.Component{
     )
   }
   componentDidMount(){
-    if(this.props.location.pathname==='/article'){
+    if(this.props.location.pathname==='/articles'){
       return axios.get('/article/article').then((res)=>{
         if(res.status===200&&res.data.code===0){
           this.setState({
