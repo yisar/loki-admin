@@ -49,7 +49,6 @@ class ArticleState {
 }
 
 const articleState = new ArticleState()
-console.log('articleState is ready')
 
 
 export default articleState

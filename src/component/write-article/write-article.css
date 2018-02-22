@@ -9,34 +9,37 @@
     margin: 20px 0;
 }
 
-.write-article input{
+.write-article input {
     padding: 10px;
     width: 100%;
     box-shadow: 1px 1px 1px rgba(70, 123, 150, 0.2);
-    border: 0px;
+    border: 0;
     margin: 10px 0;
     box-sizing: border-box;
 }
-.write-article button{
+
+.write-article button {
     background: #467B96;
-    border-radius: 2px;
     padding: 8px 30px;
     color: #fff;
     margin: 20px 0;
-    border: 0px;
+    border: 0;
+    box-shadow: 1px 1px 1px rgba(32, 79, 105, 0.6);
     cursor: pointer;
     float: right;
 }
-.write-article select{
+
+.write-article select {
     padding: 5px 17px;
     box-shadow: 1px 1px 1px rgba(70, 123, 150, 0.2);
-    border: 0px;
+    border: 0;
     color: #666;
     margin: 20px 20px 0 0;
     position: relative;
     top: 3px;
 }
-.write-article span{
+
+.write-article span {
     color: #666;
     font-size: 12px;
 }

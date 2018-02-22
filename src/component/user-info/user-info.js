@@ -10,6 +10,9 @@ class UserInfo extends React.Component {
   render() {
     const qq = `http://q2.qlogo.cn/headimg_dl?dst_uin=` + this.props.userState.user.qq + `&spec=100`
     const router =`/article/`+this.props.userState.user._id
+    if(qq===null||router===null){
+      window.reload()
+    }
     return (
       <div className="user-info">
         <div className="avatar">

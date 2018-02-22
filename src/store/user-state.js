@@ -47,9 +47,8 @@ class UserState {
         if (res.status === 200 & res.data.code === 0) {
           this.msg = res.data.msg
           this.user.qq = res.data.result.qq
-          setTimeout(() => {
-            this.redirectTo = '/'
-          }, 3000)
+          this.user._id=res.data.result._id
+            this.redirectTo = '/info'
         }
       }
     )

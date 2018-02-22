@@ -12,20 +12,20 @@
 }
 
 .login li input {
-    border: 1px solid #D9D9D6;
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
-    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(70, 123, 150, 0.2);
+    border: 0px;
 }
 
 .login li button{
     background: #467B96;
     width: 100%;
-    border: 1px solid #3d7596;
+    border: 0px;
+    box-shadow: 1px 1px 1px rgba(32, 79, 105, 0.6);
     padding: 10px;
     color: #fff;
-    border-radius: 2px;
     cursor: pointer;
 }
 .login li a{

@@ -22,11 +22,15 @@ header li:hover ul{
     top: 39px;
     left: 190px;
     background: #204f69;
+    padding: 10px 0 15px 0;
 }
 
 header li:hover ul li{
     display: block;
     font-size: 13px;
+}
+header li:hover ul li:hover{
+    font-weight: bold;
 }
 
 

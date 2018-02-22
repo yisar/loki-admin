@@ -11,12 +11,6 @@ class Header extends React.Component {
     }
   }
 
-  handleIndex(e) {
-    this.setState({
-      active: e
-    })
-    console.log(this.state.active)
-  }
 
   render() {
     const publicPath = ['/login', '/register']
@@ -28,7 +22,7 @@ class Header extends React.Component {
     return (
       <header>
         <ul>
-          <Link to='/'><li>控制台</li></Link>
+          <Link to='/info'><li>控制台</li></Link>
           <Link to='/write-article'><li>撰写</li></Link>
           <li>管理
           <ul>
