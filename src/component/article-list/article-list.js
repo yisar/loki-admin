@@ -1,7 +1,9 @@
 import React from 'react'
 import axios from 'axios'
 import ListView from '../../base/list-view/list-view'
+import {withRouter} from 'react-router-dom'
 
+@withRouter
 class ArticleList extends React.Component{
   constructor(props){
     super(props)
@@ -19,6 +21,15 @@ class ArticleList extends React.Component{
     )
   }
   componentDidMount(){
+    if(this.props.location.pathname==='/article'){
+      return axios.get('/article/article').then((res)=>{
+        if(res.status===200&&res.data.code===0){
+          this.setState({
+            article:res.data.result
+          })
+        }
+      })
+    }
     axios.get('/article/author',{
       params: {
         id: this.props.match.params.author

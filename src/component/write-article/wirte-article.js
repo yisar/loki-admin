@@ -52,6 +52,7 @@ class WriteArticle extends React.Component {
       }).then((res) => {
         if (res.status === 200 && res.data.code === 0) {
           this.setState(res.data.result)
+          console.log(this.state.content)
         }
       })
     }
@@ -60,9 +61,6 @@ class WriteArticle extends React.Component {
 
   shouldComponentUpdate(nextProps, nextState) {
 
-    // if (this.state.content !== nextState.content) {
-    //   return true
-    // }
     if (this.state.title !== nextState.title || this.state.sort !== nextState.sort || this.state.status !== nextState.status) {
       return true
     }
@@ -80,7 +78,7 @@ class WriteArticle extends React.Component {
                  onChange={e => this.handleChange('title', e.target.value)}/>
           <Markdown handleMde={this.changeMde.bind(this)}
                     value={this.state.content}></Markdown>
-          <span><select onChange={e => this.handleChange('sort', e.target.value)} defaultValue=''
+          <span><select onChange={e => this.handleChange('sort', e.target.value)}
                         value={this.state.sort}>
           <option value="anime">动画</option>
           <option value="comic">漫画</option>
@@ -89,7 +87,7 @@ class WriteArticle extends React.Component {
           <option value="game">游戏</option>
           <option value="other">其他</option>
         </select></span>
-          <span><select onChange={e => this.handleChange('status', e.target.value)} defaultValue=''
+          <span><select onChange={e => this.handleChange('status', e.target.value)}
                         value={this.state.status}>
           <option value="wait">待审核</option>
           <option value="draft">草稿</option>

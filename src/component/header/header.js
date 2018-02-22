@@ -29,9 +29,14 @@ class Header extends React.Component {
       <header>
         <ul>
           <Link to='/'><li>控制台</li></Link>
-          <li className={this.state.active === 1 ? 'active' : null} onClick={(e)=>{this.handleIndex(e)}}>撰写</li>
-          <li className={this.state.active === 2 ? 'active' : null} onClick={this.handleIndex}>管理</li>
-          <li className={this.state.active === 3 ? 'active' : null} onClick={this.handleIndex}>设置</li>
+          <Link to='/write-article'><li>撰写</li></Link>
+          <li>管理
+          <ul>
+            <Link to='/article'><li>管理文章</li></Link>
+            <li>管理用户</li>
+          </ul>
+          </li>
+          <li>设置</li>
         </ul>
       </header>
     )

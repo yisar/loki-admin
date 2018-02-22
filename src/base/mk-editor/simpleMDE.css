@@ -5,8 +5,6 @@
  * @license MIT
  */
 
-
-
 .CodeMirror {
     color: #000
 }
@@ -436,8 +434,7 @@ span.CodeMirror-selectedtext {
 .CodeMirror {
     height: auto;
     min-height: 300px;
-    border: 1px solid #ddd;
-    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(70, 123, 150, 0.2);
     padding: 10px;
     font: inherit;
     z-index: 1

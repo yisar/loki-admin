@@ -25,6 +25,7 @@ class App extends React.Component {
         <Route path='/write-article' component={WriteArticle}/>
         <Route path='/editor-article/:editor' component={WriteArticle}/>
         <Route path='/article/:author' component={ArticleList}/>
+        <Route path='/article' component={ArticleList}/>
         <Footer/>
       </div>
     )

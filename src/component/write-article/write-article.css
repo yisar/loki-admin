@@ -12,8 +12,8 @@
 .write-article input{
     padding: 10px;
     width: 100%;
-    border-radius: 2px;
-    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px rgba(70, 123, 150, 0.2);
+    border: 0px;
     margin: 10px 0;
     box-sizing: border-box;
 }
@@ -29,7 +29,8 @@
 }
 .write-article select{
     padding: 5px 17px;
-    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px rgba(70, 123, 150, 0.2);
+    border: 0px;
     color: #666;
     margin: 20px 20px 0 0;
     position: relative;

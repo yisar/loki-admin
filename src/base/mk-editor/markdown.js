@@ -5,9 +5,9 @@ import './markdown.css'
 import {observer, inject} from 'mobx-react'
 import {withRouter} from 'react-router-dom'
 
+@withRouter
 @inject('articleState') @observer
 
-@withRouter
 
 class Markdown extends React.Component {
 
@@ -17,14 +17,21 @@ class Markdown extends React.Component {
       element: document.getElementById("marked"),
       status: false,
       spellChecker: false,
-      autofocus:true,
-      forceSync:true
+      forceSync: true
     })
 
     this.mde.codemirror.on('change', () => {
       this.props.handleMde(this.mde.value())
     })
 
+  }
+
+  shouldComponentUpdate() {
+      if (this.props.value||this.props.value===null) {
+        return false
+      }
+
+    return true
   }
 
   componentDidUpdate() {

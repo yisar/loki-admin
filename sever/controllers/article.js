@@ -29,11 +29,10 @@ module.exports = {
     }
   },
 
-  // 查询单一用户的文章
+  // 查询所有文章
 
-  async getUserArticles(ctx) {
-    let name = ctx.query.name
-    const result = await Article.find({author: name})
+  async getArticle(ctx) {
+    const result = await Article.find({})
     ctx.body = {
       code: 0,
       result
@@ -55,7 +54,7 @@ module.exports = {
   async updateArticle(ctx) {
     let data = ctx.request.body
     console.log(data)
-    const result = await Article.update({_id: data._id}, {
+    await Article.update({_id: data._id}, {
       $set: {
         title: data.title,
         content: data.content,
@@ -65,8 +64,7 @@ module.exports = {
     })
     ctx.body = {
       code: 0,
-      msg: '更新成功啦！',
-      result
+      msg: '更新成功啦！'
     }
   },
 

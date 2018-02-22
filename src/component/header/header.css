@@ -2,6 +2,7 @@ header{
     background:#467B96;
     padding: 10px;
     width: 100%;
+    position: relative;
 }
 
 header li{
@@ -11,6 +12,24 @@ header li{
     cursor: pointer;
 }
 
-header li.active{
+header li:hover{
     background: #204f69;
+}
+
+header li:hover ul{
+    display: block;
+    position: absolute;
+    top: 39px;
+    left: 190px;
+    background: #204f69;
+}
+
+header li:hover ul li{
+    display: block;
+    font-size: 13px;
+}
+
+
+header li ul{
+    display: none;
 }
