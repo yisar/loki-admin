@@ -69,7 +69,7 @@ module.exports = {
   },
 
   // 删除文章
-  async DeleteOneArticle(ctx) {
+  async deleteOneArticle(ctx) {
     let id = ctx.query.id
 
     await Article.remove({_id: id})

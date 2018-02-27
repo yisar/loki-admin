@@ -7,6 +7,7 @@ const UserSchema = new Schema({
   pwd: {type: String, require: true},
   qq: {type: String, require: true},
   desc: {type: String, require: true},
+  role:{type:String,require:true}
   // Articles : [{ type: Schema.Types.ObjectId, ref: 'Article' }]
 })
 

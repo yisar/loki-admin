@@ -62,7 +62,7 @@ class ListView extends React.Component {
                 <div className="status">{item.status}</div>
                 <div className="action"><i className="icon-font icon-del" onClick={() => {
                   this.handleShow(item._id)
-                }}></i><i className="icon-font icon-editor"></i></div>
+                }}></i><Link to={`/editor-article/` + item._id}><i className="icon-font icon-editor"></i></Link></div>
               </li>
             )
           })}
