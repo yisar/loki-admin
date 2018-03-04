@@ -2,11 +2,12 @@ const User = require('../models/user')
 const utils = require('../common/utils')
 const _ignore = {pwd: 0, __v: 0}
 module.exports = {
-  // 用户列表
-  async userList(ctx) {
-    const list = await User.find({})
+  // 查找所有用户
+  async getUser(ctx) {
+    const result = await User.find({})
     ctx.body = {
-      list
+      code:0,
+      result
     }
   },
   // 用户信息
@@ -64,7 +65,8 @@ module.exports = {
     // 设置cookie
 
     ctx.cookies.set(
-      'id', id
+      'id', id,
+      {httpOnly:false}
     )
     ctx.body = {
       code: 0,

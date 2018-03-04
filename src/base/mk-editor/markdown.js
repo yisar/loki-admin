@@ -1,7 +1,6 @@
 import React from 'react'
 import Mde from 'simplemde'
 import './simpleMDE.css'
-import './markdown.css'
 import {observer, inject} from 'mobx-react'
 import {withRouter} from 'react-router-dom'
 
@@ -15,6 +14,7 @@ class Markdown extends React.Component {
     console.log(this.props)
     this.mde = new Mde({
       element: document.getElementById("marked"),
+      autoDownloadFontAwesome: true,
       status: false,
       spellChecker: false,
       forceSync: true

@@ -23,7 +23,7 @@ class ListView extends React.Component {
       isShow: false,
       id: '',
     })
-    window.location.reload()
+    window.location.href=window.location.href
   }
 
   handleShow(id) {

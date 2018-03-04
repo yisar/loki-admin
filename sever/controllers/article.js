@@ -1,6 +1,29 @@
 const Article = require('../models/article')
 
 module.exports = {
+  // 查询所有文章
+
+  async getArticle(ctx) {
+    const result = await Article.find({})
+    ctx.body = {
+      code: 0,
+      result
+    }
+  },
+
+  // 查找单一文章
+
+  async getOneArticle(ctx) {
+    let id = ctx.query.id
+    const result = await Article.findOne({_id: id})
+    ctx.body = {
+      code: 0,
+      result
+    }
+  },
+
+  // 查找作者文章
+
   async authorArticle(ctx) {
     let authorId = ctx.query.id
     const result = await Article.find({author: authorId})
@@ -29,26 +52,6 @@ module.exports = {
     }
   },
 
-  // 查询所有文章
-
-  async getArticle(ctx) {
-    const result = await Article.find({})
-    ctx.body = {
-      code: 0,
-      result
-    }
-  },
-
-  // 查找单一文章
-
-  async getOneArticle(ctx) {
-    let id = ctx.query.id
-    const result = await Article.findOne({_id: id})
-    ctx.body = {
-      code: 0,
-      result
-    }
-  },
 
   // 更新文章
   async updateArticle(ctx) {

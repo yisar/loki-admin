@@ -37,3 +37,10 @@ header li:hover ul li:hover{
 header li ul{
     display: none;
 }
+
+header .logout{
+    background: #608ea8;
+    float: right;
+    /*padding: 2px 20px;*/
+    /*!*margin: 8px 20px;*!*/
+}

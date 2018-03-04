@@ -8,7 +8,7 @@ const Router = require('koa-router')
 
 const router = new Router()
 
-router.get('/user', user.userList)
+router.get('/user', user.getUser)
 router.get('/info', user.userInfo)
 router.post('/register',user.userRegister)
 router.post('/login',user.userLogin)

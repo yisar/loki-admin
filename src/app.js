@@ -11,6 +11,7 @@ import Footer from './component/footer/footer'
 import WriteArticle from "./component/write-article/wirte-article"
 import ArticleList from './component/article-list/article-list'
 import Loading from './base/loading/loading'
+import UserList from './component/user-list/user-list'
 
 class App extends React.Component {
 
@@ -27,6 +28,7 @@ class App extends React.Component {
         <Route path='/editor-article/:editor' component={WriteArticle}/>
         <Route path='/article/:author' component={ArticleList}/>
         <Route path='/articles' component={ArticleList}/>
+        <Route path='/users' component={UserList}/>
         <Footer/>
       </div>
     )

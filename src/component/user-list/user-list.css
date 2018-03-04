@@ -1,0 +1,33 @@
+.user-list {
+    width: 900px;
+    margin: 50px auto;
+}
+
+.user-list h1 {
+    color: #467B96;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.user-list ul{
+    display: flex;
+    padding: 20px;
+    box-shadow: 0px 1px 0px rgba(70, 123, 150, 0.2);
+    background: #fff;
+}
+
+.user-list ul li{
+    flex: 1;
+}
+
+.user-list .avatar{
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+
+
+
