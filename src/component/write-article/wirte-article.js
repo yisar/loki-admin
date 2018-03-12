@@ -52,7 +52,6 @@ class WriteArticle extends React.Component {
       }).then((res) => {
         if (res.status === 200 && res.data.code === 0) {
           this.setState(res.data.result)
-          console.log(this.state.content)
         }
       })
     }
@@ -85,6 +84,8 @@ class WriteArticle extends React.Component {
           <option value="imgpack">图包</option>
           <option value="music">音乐</option>
           <option value="game">游戏</option>
+          <option value="novel">小说</option>
+          <option value="news">资讯</option>
           <option value="other">其他</option>
         </select></span>
           <span><select onChange={e => this.handleChange('status', e.target.value)}

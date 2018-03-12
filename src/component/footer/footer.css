@@ -1,9 +1,9 @@
 footer {
-    position: fixed;
-    bottom: 0;
     font-size: 12px;
     width: 100%;
     color: #999;
+    position: absolute;
+    bottom: 0;
 }
 
 footer p {

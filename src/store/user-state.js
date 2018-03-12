@@ -48,7 +48,7 @@ class UserState {
           this.msg = res.data.msg
           this.user.qq = res.data.result.qq
           this.user._id=res.data.result._id
-            this.redirectTo = '/info'
+          this.redirectTo = '/info'
         }
       }
     )

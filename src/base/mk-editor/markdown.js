@@ -36,8 +36,6 @@ class Markdown extends React.Component {
 
   componentDidUpdate() {
     this.mde.value(this.props.value)
-    console.log(this.props.value)
-    console.log(this.mde.value())
   }
 
   render() {

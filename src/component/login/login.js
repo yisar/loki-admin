@@ -1,7 +1,7 @@
 import React from 'react'
 import './login.css'
 import {observer, inject} from 'mobx-react'
-import {Redirect} from 'react-router-dom'
+import {Redirect,Link} from 'react-router-dom'
 import TopTip from '../../base/top-tip/top-tip'
 
 
@@ -39,7 +39,7 @@ class Login extends React.Component {
             <li>
               <button onClick={this.handleLogin.bind(this)}>登录</button>
             </li>
-            <li><a href="">返回首页</a></li>
+            <li><Link to="/register">注册</Link></li>
           </ul>
         </div>
       </div>
